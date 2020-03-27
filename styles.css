@@ -1,0 +1,145 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+}
+
+body {
+    background-image: url('images/bg-mobile.svg');
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 36px 36px 4px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+  }
+
+.attribution a {
+    color: hsl(231, 29%, 86%);
+}
+
+@media screen and (min-width: 375px) {
+    .header__image {
+        height: 30px;
+    }
+
+    .main {
+        color: #fff;
+        text-align: center;
+    }
+
+    .main__image {
+        width: 100%;
+        margin: 60px 0;
+    }
+
+    .main__title, .main__button {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .main__title {
+        font-size: 24px;
+    }
+
+    .main__text {
+        margin-bottom: 40px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .main__button {
+        background-color: #fff;
+        padding: 8px 68px;
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--violet);
+        border-radius: 25px;
+        box-shadow: 0 4px 8px -4px #000;
+    }
+
+    .footer {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;    
+    }
+
+    .footer__socials {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer__item {
+        margin: 0 5px 20px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .footer__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .footer__image {
+        width: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    body {
+        background-image: url('images/bg-desktop.svg');
+        padding: 36px 60px 4px;
+    }
+
+    .header__image { 
+        height: 60px;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .main__right {
+        align-self: start;
+        margin-left: 60px;
+        margin-top: 80px;
+    }
+
+    .main__title {
+        font-size: 36px;
+    }
+
+    .main__text {
+        width: 82%;
+    }
+
+    .main__button {
+        padding: 16px 52px;
+    }
+
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__item {
+        margin-bottom: 0;
+    }
+
+    .footer__image {
+        width: 28px;
+    }
+}
